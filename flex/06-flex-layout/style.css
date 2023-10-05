@@ -1,11 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/ 
+  /* Why does this not divide the space between the divs along the main axis */
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto; /* ugh */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  background-color: #929292;
+}
+
 
 img {
   width: 600px;
@@ -24,4 +48,19 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #4b4949;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
 }
